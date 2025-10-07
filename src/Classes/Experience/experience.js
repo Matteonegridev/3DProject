@@ -1,8 +1,10 @@
-import Renderer from "./renderer";
-import Sizes from "./Utils/sizes";
-import Time from "./Utils/time";
-import Camera from "./camera";
-import World from "./World/world";
+import Renderer from "./Renderer";
+import Sizes from "./Utils/Sizes";
+import Time from "./Utils/Time";
+import Camera from "./Camera";
+import World from "./World/World";
+import Resources from "./Utils/Resources";
+import sources from "./sources";
 
 import * as THREE from "three";
 
@@ -22,6 +24,7 @@ export default class Experience {
     this.sizes = new Sizes();
     this.time = new Time();
     this.scene = new THREE.Scene();
+    this.resources = new Resources(sources);
     this.camera = new Camera();
     this.renderer = new Renderer();
     this.world = new World();

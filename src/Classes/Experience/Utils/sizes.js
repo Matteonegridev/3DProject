@@ -1,5 +1,5 @@
 import { throttle } from "../../../functions/throttle";
-import EventEmitter from "./eventEmitter";
+import EventEmitter from "./EventEmitter";
 
 export default class Sizes extends EventEmitter {
   constructor() {

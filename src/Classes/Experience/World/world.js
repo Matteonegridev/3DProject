@@ -1,5 +1,5 @@
-import Experience from "../experience";
-import Environment from "../Environment/environment";
+import Experience from "../Experience";
+import Environment from "../Environment/Environment";
 
 import * as THREE from "three";
 

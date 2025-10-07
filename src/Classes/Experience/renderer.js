@@ -1,4 +1,4 @@
-import Experience from "./experience";
+import Experience from "./Experience";
 import * as THREE from "three";
 
 export default class Renderer {
