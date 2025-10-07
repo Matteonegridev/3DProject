@@ -1,9 +1,13 @@
 import Experience from "../experience";
+import Environment from "../Environment/environment";
+
 import * as THREE from "three";
 
 export default class World {
   constructor() {
     this.experience = new Experience();
+    // call enviroment calss for lights:
+    this.environment = new Environment();
     this.scene = this.experience.scene;
     // Test mesh
     const testMesh = new THREE.Mesh(

@@ -5,7 +5,6 @@ import Camera from "./camera";
 import World from "./World/world";
 
 import * as THREE from "three";
-import Environment from "./Environment/environment";
 
 let instance = null;
 
@@ -26,7 +25,6 @@ export default class Experience {
     this.camera = new Camera();
     this.renderer = new Renderer();
     this.world = new World();
-    this.environment = new Environment();
 
     this.sizes.on("resize", () => {
       this.resize();
