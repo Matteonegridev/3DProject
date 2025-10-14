@@ -44,6 +44,16 @@ export default class Experience {
   update() {
     //NOTA: mettere sempre camera prima e renderer dopo
     this.camera.update();
+    this.world.update();
     this.renderer.update();
+  }
+  destroy() {
+    this.sizes.off("resize");
+    this.time.off("tick");
+
+    // traverse the whole scene:
+    this.scene.traverse((child) => {
+      console.log(child);
+    });
   }
 }

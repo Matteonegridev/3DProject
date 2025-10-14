@@ -12,7 +12,7 @@ export default class Renderer {
     this.setRenderer();
   }
   setRenderer() {
-    this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas, antialias: true, alpha: true });
+    this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas, antialias: true });
     this.renderer.setSize(this.sizes.width, this.sizes.height);
     this.renderer.toneMappingExposure = 1.75;
     this.renderer.shadowMap.enabled = true;

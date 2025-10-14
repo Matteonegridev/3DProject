@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import Experience from "./Classes/Experience/experience";
+import Experience from "./Classes/Experience/Experience";
 
 function App() {
   const canvas = useRef(null);
